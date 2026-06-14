@@ -17,8 +17,16 @@ export default function Home() {
           <h4 className="text-muted">Department of Language Studies, University of Toronto</h4>
 
           <p className="mt-3 fs-5">
-            Welcome to my academic homepage. I am a faculty member in the Department of Language Studies at the University of Toronto. 
-            My work focuses on the syntax and morphology of endangered languages, teaching and learning strategies, online learning, hybrid learning, and the structure of online courses. You can learn more about my research, teaching, and publications using the navigation above.
+            I am an Associate Professor of Linguistics in the Department of Language Studies at the University of Toronto Scarborough. My work explores language as deeply human: a way we express who we are, build relationships, and make sense of the world.
+          </p>
+          <p className="mt-3 fs-5">
+            I teach linguistics courses on syntax, English grammar, sociolinguistics, and language diversity, with a focus on creating engaging, accessible learning experiences connected to students’ lives.
+          </p>
+          <p className="mt-3 fs-5">
+            My work brings together teaching innovation, digital learning, responsible AI use in higher education, and community-engaged teaching.
+          </p>
+          <p className="mt-3 fs-5">
+            Through my teaching and research, I aim to help students see linguistics as connected to how they communicate, think, learn, and move through the world.
           </p>
         </div>
       </div>

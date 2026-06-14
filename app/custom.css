@@ -1,0 +1,13 @@
+/* Replace Bootstrap green with U of T blue */
+.text-success {
+  color: #00204E !important;
+}
+
+.bg-success {
+  background-color: #00204E !important;
+}
+
+.border-success {
+  border-color: #00204E !important;
+}
+

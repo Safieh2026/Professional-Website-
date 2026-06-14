@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./custom.css"; 
 import "./globals.css";
 import { ReactNode } from "react";
 
