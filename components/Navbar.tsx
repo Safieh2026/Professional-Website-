@@ -21,10 +21,50 @@ export default function Navbar() {
           <ul className="navbar-nav ms-auto gap-lg-3">
             <li className="nav-item"><a className="nav-link" href="/">Home</a></li>
             <li className="nav-item"><a className="nav-link" href="/about">About</a></li>
-            <li className="nav-item"><a className="nav-link" href="/teaching">Teaching</a></li>
-            <li className="nav-item"><a className="nav-link" href="/research">Research and Scholarship</a></li>
-            <li className="nav-item"><a className="nav-link" href="/community">Community Partnership</a></li>
-            <li className="nav-item"><a className="nav-link" href="/publications">Publications and Featured Work</a></li>
+
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                Teaching
+              </a>
+              <ul className="dropdown-menu">
+                <li><a className="dropdown-item" href="/teaching/philosophy">Teaching Philosophy</a></li>
+                <li><a className="dropdown-item" href="/teaching/courses">Courses</a></li>
+                <li><a className="dropdown-item" href="/teaching/resources">Student Resources</a></li>
+                <li><a className="dropdown-item" href="/teaching/experiential">Experiential Learning</a></li>
+              </ul>
+            </li>
+
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                Research & Scholarship
+              </a>
+              <ul className="dropdown-menu">
+                <li><a className="dropdown-item" href="/research/areas">Research Areas</a></li>
+                <li><a className="dropdown-item" href="/research/projects">Current Projects</a></li>
+                <li><a className="dropdown-item" href="/research/students">Student Researchers</a></li>
+                <li><a className="dropdown-item" href="/research/collaborators">Research Collaborators</a></li>
+              </ul>
+            </li>
+
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                Community Partnership
+              </a>
+              <ul className="dropdown-menu">
+                <li><a className="dropdown-item" href="/community/documentation">Language Documentation & Revitalization</a></li>
+                <li><a className="dropdown-item" href="/community/documentary">Documentary Project</a></li>
+                <li><a className="dropdown-item" href="/community/events">Community Events</a></li>
+              </ul>
+            </li>
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                Publications and Featured Work
+              </a>
+              <ul className="dropdown-menu">
+                <li><a className="dropdown-item" href="/publications/articles">Articles</a></li>
+                <li><a className="dropdown-item" href="/publications/media">Media & Interviews</a></li>
+              </ul>
+            </li>
             <li className="nav-item"><a className="nav-link" href="/cv">CV</a></li>
           </ul>
         </div>
