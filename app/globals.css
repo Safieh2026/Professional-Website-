@@ -1,1 +1,8 @@
-/* empty — Bootstrap only */
+
+/* Enable hover dropdowns on desktop */
+@media (min-width: 992px) {
+  .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}

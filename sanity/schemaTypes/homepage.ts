@@ -6,13 +6,19 @@ export default defineType({
     type: "document",
     fields: [
         defineField({
+            name: "doctitle",
+            title: "Document Title",
+            type: "string",
+            validation: (Rule) => Rule.required(),
+        }),
+        defineField({
             name: "title",
             title: "Title",
             type: "string",
         }),
         defineField({
             name: "subtitle",
-            title: "Subtitle",
+            title: "Department & Position",
             type: "string",
         }),
         defineField({
@@ -28,4 +34,9 @@ export default defineType({
             options: { hotspot: true },
         }),
     ],
+    preview: {
+        select: {
+            title: "doctitle",
+        },
+    },
 });
