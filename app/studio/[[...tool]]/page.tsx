@@ -15,9 +15,19 @@ export const dynamic = 'force-static'
 export { metadata, viewport } from 'next-sanity/studio'
 
 export default function StudioPage() {
-
   return (
-      <NextStudio config={config} />    
+    <div
+      style={{
+        height: "70vh",          // shrink height
+        border: "3px solid black", // black border
+        borderRadius: "8px",     // optional: rounded corners
+        overflow: "hidden",      // prevent scrollbars from leaking
+        margin: "20px auto",     // center it
+        width: "95%",            // optional: shrink width slightly
+      }}
+    >
+      <NextStudio config={config} />
+    </div>
   );
-
 }
+
