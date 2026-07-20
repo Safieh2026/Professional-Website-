@@ -18,16 +18,14 @@ export default function StudioPage() {
   return (
     <div
       style={{
-        height: "70vh",          // shrink height
+        //height: "110vh",            // your desired visible height
         border: "3px solid black", // black border
-        borderRadius: "8px",     // optional: rounded corners
-        overflow: "hidden",      // prevent scrollbars from leaking
-        margin: "20px auto",     // center it
-        width: "95%",            // optional: shrink width slightly
+        borderRadius: "8px",
+        overflowY: "auto",         // scroll INSIDE the box
+        overflowX: "hidden",
       }}
     >
       <NextStudio config={config} />
     </div>
   );
 }
-
