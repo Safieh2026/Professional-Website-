@@ -8,6 +8,7 @@ import homepage from "./sanity/schemaTypes/homepage";
 import about from "./sanity/schemaTypes/about";
 import teaching from "./sanity/schemaTypes/teaching";
 import research from "./sanity/schemaTypes/research";
+import community from "./sanity/schemaTypes/community";
 
 import {visionTool} from '@sanity/vision'
 import {defineConfig} from 'sanity'
@@ -29,6 +30,7 @@ export default defineConfig({
       about,
       teaching,
       research,
+      community,
     ]
   },
   plugins: [
