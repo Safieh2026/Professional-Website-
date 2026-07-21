@@ -1,10 +1,25 @@
-export default function CommunityEvents() {
+import { client } from "@/sanity/lib/client";
+import { PortableText } from "@portabletext/react";
+import type { ReactNode } from "react";
+
+const components = {
+  block: {
+    normal: ({ children }: { children?: ReactNode }) => (
+      <p className="fs-5" style={{ lineHeight: "1.7", marginBottom: "1rem" }}>
+        {children}
+      </p>
+    ),
+  },
+};
+
+export default async function CommunityEvents() {
+  const data = await client.fetch(`*[_type == "community"][0]`);
+
   return (
     <div className="container pt-4 pb-5">
       <h1 className="fw-bold text-success mb-4">Community Events</h1>
-      <p className="fs-5">
-        This page highlights upcoming events, workshops, and public-facing community initiatives.
-      </p>
+
+      <PortableText value={data.events} components={components} />
     </div>
   );
 }
