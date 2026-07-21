@@ -7,6 +7,7 @@
 import homepage from "./sanity/schemaTypes/homepage";
 import about from "./sanity/schemaTypes/about";
 import teaching from "./sanity/schemaTypes/teaching";
+import research from "./sanity/schemaTypes/research";
 
 import {visionTool} from '@sanity/vision'
 import {defineConfig} from 'sanity'
@@ -26,7 +27,8 @@ export default defineConfig({
     types: [
       homepage,
       about,
-      teaching
+      teaching,
+      research,
     ]
   },
   plugins: [
