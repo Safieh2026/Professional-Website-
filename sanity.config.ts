@@ -10,6 +10,7 @@ import teaching from "./sanity/schemaTypes/teaching";
 import research from "./sanity/schemaTypes/research";
 import community from "./sanity/schemaTypes/community";
 import publications from "./sanity/schemaTypes/publications";
+import cv from "./sanity/schemaTypes/cv";
 
 import {visionTool} from '@sanity/vision'
 import {defineConfig} from 'sanity'
@@ -33,6 +34,7 @@ export default defineConfig({
       research,
       community,
       publications,
+      cv,
     ]
   },
   plugins: [
