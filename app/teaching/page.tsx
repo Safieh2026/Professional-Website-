@@ -1,5 +1,6 @@
 import { client } from "@/sanity/lib/client";
 import { PortableText } from "@portabletext/react";
+import Carousel from "@/components/Carousel";
 import type { ReactNode } from "react";
 
 const components = {
@@ -12,9 +13,7 @@ const components = {
   },
 };
 
-
 export default async function Teaching() {
-
   const data = await client.fetch(`*[_type == "teaching"][0]`);
 
   return (
@@ -22,7 +21,19 @@ export default async function Teaching() {
 
       <h1 className="fw-bold text-success mb-4">Teaching</h1>
 
-      <PortableText value={data.overview} components={components} />
+      {/* Centered Carousel */}
+      <div className="row justify-content-center">
+        <div className="col-md-3 mb-4 d-flex justify-content-center">
+          <Carousel images={data.teachingOverviewImages} id="teachingOverviewCarousel" />
+        </div>
+      </div>
+
+      {/* Text Below */}
+      <div className="row">
+        <div className="col-12">
+          <PortableText value={data.overview} components={components} />
+        </div>
+      </div>
 
     </div>
   );

@@ -11,11 +11,29 @@ export default defineType({
       type: "string",
       validation: (Rule) => Rule.required(),
     }),
+
+    // OVERVIEW
+    defineField({
+      name: "teachingOverviewImages",
+      title: "Teaching Overview Images",
+      type: "array",
+      of: [{ type: "image" }],
+      options: { layout: "grid" },
+    }),
     defineField({
       name: "overview",
       title: "Teaching Overview",
       type: "array",
       of: [{ type: "block" }],
+    }),
+
+    // PHILOSOPHY
+    defineField({
+      name: "philosophyImages",
+      title: "Teaching Philosophy Images",
+      type: "array",
+      of: [{ type: "image" }],
+      options: { layout: "grid" },
     }),
     defineField({
       name: "philosophy",
@@ -23,17 +41,44 @@ export default defineType({
       type: "array",
       of: [{ type: "block" }],
     }),
+
+    // COURSES
+    defineField({
+      name: "coursesImages",
+      title: "Courses Images",
+      type: "array",
+      of: [{ type: "image" }],
+      options: { layout: "grid" },
+    }),
     defineField({
       name: "courses",
       title: "Courses",
       type: "array",
       of: [{ type: "block" }],
     }),
+
+    // STUDENT RESOURCES
+    defineField({
+      name: "studentResourcesImages",
+      title: "Student Resources Images",
+      type: "array",
+      of: [{ type: "image" }],
+      options: { layout: "grid" },
+    }),
     defineField({
       name: "studentResources",
       title: "Student Resources",
       type: "array",
       of: [{ type: "block" }],
+    }),
+
+    // EXPERIENTIAL LEARNING
+    defineField({
+      name: "experientialLearningImages",
+      title: "Experiential Learning Images",
+      type: "array",
+      of: [{ type: "image" }],
+      options: { layout: "grid" },
     }),
     defineField({
       name: "experientialLearning",
@@ -42,6 +87,7 @@ export default defineType({
       of: [{ type: "block" }],
     }),
   ],
+
   preview: {
     select: {
       title: "doctitle",
