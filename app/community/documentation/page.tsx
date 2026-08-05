@@ -1,5 +1,6 @@
 import { client } from "@/sanity/lib/client";
 import { PortableText } from "@portabletext/react";
+import Carousel from "@/components/Carousel";
 import type { ReactNode } from "react";
 
 const components = {
@@ -21,7 +22,20 @@ export default async function LanguageDocumentation() {
         Language Documentation & Revitalization
       </h1>
 
-      <PortableText value={data.revitalization} components={components} />
+      <div className="row justify-content-center">
+        <div className="col-md-3 mb-4 d-flex justify-content-center">
+          <Carousel
+            images={data.revitalizationImages}
+            id="revitalizationCarousel"
+          />
+        </div>
+      </div>
+
+      <div className="row">
+        <div className="col-12">
+          <PortableText value={data.revitalization} components={components} />
+        </div>
+      </div>
     </div>
   );
 }

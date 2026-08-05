@@ -12,6 +12,13 @@ export default defineType({
       validation: (Rule) => Rule.required(),
     }),
 
+    // OVERVIEW
+    defineField({
+      name: "communityOverviewImages",
+      title: "Community Overview Images",
+      type: "array",
+      of: [{ type: "image" }],
+    }),
     defineField({
       name: "overview",
       title: "Community Partnership Overview",
@@ -19,6 +26,13 @@ export default defineType({
       of: [{ type: "block" }],
     }),
 
+    // REVITALIZATION
+    defineField({
+      name: "revitalizationImages",
+      title: "Language Documentation & Revitalization Images",
+      type: "array",
+      of: [{ type: "image" }],
+    }),
     defineField({
       name: "revitalization",
       title: "Language Documentation & Revitalization",
@@ -26,6 +40,13 @@ export default defineType({
       of: [{ type: "block" }],
     }),
 
+    // DOCUMENTARY
+    defineField({
+      name: "documentaryImages",
+      title: "Documentary Project Images",
+      type: "array",
+      of: [{ type: "image" }],
+    }),
     defineField({
       name: "documentary",
       title: "Documentary Project",
@@ -33,6 +54,13 @@ export default defineType({
       of: [{ type: "block" }],
     }),
 
+    // EVENTS
+    defineField({
+      name: "eventsImages",
+      title: "Community Events Images",
+      type: "array",
+      of: [{ type: "image" }],
+    }),
     defineField({
       name: "events",
       title: "Community Events",
