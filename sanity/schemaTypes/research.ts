@@ -12,6 +12,14 @@ export default defineType({
       validation: (Rule) => Rule.required(),
     }),
 
+    // OVERVIEW
+    defineField({
+      name: "researchOverviewImages",
+      title: "Research Overview Images",
+      type: "array",
+      of: [{ type: "image" }],
+      options: { layout: "grid" },
+    }),
     defineField({
       name: "overview",
       title: "Research & Scholarship Overview",
@@ -19,6 +27,14 @@ export default defineType({
       of: [{ type: "block" }],
     }),
 
+    // RESEARCH AREAS
+    defineField({
+      name: "areasImages",
+      title: "Research Areas Images",
+      type: "array",
+      of: [{ type: "image" }],
+      options: { layout: "grid" },
+    }),
     defineField({
       name: "areas",
       title: "Research Areas",
@@ -26,6 +42,14 @@ export default defineType({
       of: [{ type: "block" }],
     }),
 
+    // CURRENT PROJECTS
+    defineField({
+      name: "projectsImages",
+      title: "Current Projects Images",
+      type: "array",
+      of: [{ type: "image" }],
+      options: { layout: "grid" },
+    }),
     defineField({
       name: "projects",
       title: "Current Projects",
@@ -33,6 +57,14 @@ export default defineType({
       of: [{ type: "block" }],
     }),
 
+    // STUDENT RESEARCHERS
+    defineField({
+      name: "studentsImages",
+      title: "Student Researchers Images",
+      type: "array",
+      of: [{ type: "image" }],
+      options: { layout: "grid" },
+    }),
     defineField({
       name: "students",
       title: "Student Researchers",
@@ -40,6 +72,14 @@ export default defineType({
       of: [{ type: "block" }],
     }),
 
+    // COLLABORATORS
+    defineField({
+      name: "collaboratorsImages",
+      title: "Research Collaborators Images",
+      type: "array",
+      of: [{ type: "image" }],
+      options: { layout: "grid" },
+    }),
     defineField({
       name: "collaborators",
       title: "Research Collaborators",

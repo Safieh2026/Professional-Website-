@@ -1,5 +1,6 @@
 import { client } from "@/sanity/lib/client";
 import { PortableText } from "@portabletext/react";
+import Carousel from "@/components/Carousel";
 import type { ReactNode } from "react";
 
 const components = {
@@ -19,7 +20,19 @@ export default async function StudentResearchers() {
     <div className="container pt-4 pb-5">
       <h1 className="fw-bold text-success mb-4">Student Researchers</h1>
 
-      <PortableText value={data.students} components={components} />
+      {/* Centered Carousel */}
+      <div className="row justify-content-center">
+        <div className="col-md-3 mb-4 d-flex justify-content-center">
+          <Carousel images={data.studentsImages} id="researchStudentsCarousel" />
+        </div>
+      </div>
+
+      {/* Text Below */}
+      <div className="row">
+        <div className="col-12">
+          <PortableText value={data.students} components={components} />
+        </div>
+      </div>
     </div>
   );
 }
