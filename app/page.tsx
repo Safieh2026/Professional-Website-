@@ -25,7 +25,7 @@ export default async function Home() {
   return (
     <div className="container pt-3 pb-5">
 
-      <div className="row align-items-center gx-5">
+      <div className="row align-items-start gx-5">
         <div className="col-md-3 text-center mb-4 mb-md-0">
           {data.image && (
             <img
