@@ -1,3 +1,5 @@
+export const revalidate = 0;
+
 import { client } from "@/sanity/lib/client";
 import { PortableText } from "@portabletext/react";
 import type { ReactNode } from "react";
