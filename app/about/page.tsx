@@ -2,6 +2,8 @@ import { client } from "@/sanity/lib/client";
 import imageUrlBuilder from "@sanity/image-url";
 import { PortableText } from "@portabletext/react";
 
+export const revalidate = 0;
+
 const builder = imageUrlBuilder(client);
 function urlFor(source: any) {
   return builder.image(source);

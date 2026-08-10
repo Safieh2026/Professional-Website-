@@ -3,6 +3,8 @@ import { PortableText } from "@portabletext/react";
 import Carousel from "@/components/Carousel";
 import type { ReactNode } from "react";
 
+export const revalidate = 0;
+
 const components = {
   block: {
     normal: ({ children }: { children?: ReactNode }) => (

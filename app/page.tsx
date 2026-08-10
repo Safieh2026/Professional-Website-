@@ -3,6 +3,8 @@ import imageUrlBuilder from "@sanity/image-url";
 import { PortableText } from "@portabletext/react";
 import type { ReactNode } from "react";
 
+export const revalidate = 0;
+
 const components = {
   block: {
     normal: ({ children }: { children?: ReactNode }) => (
