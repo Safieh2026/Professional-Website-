@@ -43,7 +43,7 @@ export default async function About() {
                   >
                     <img
                       src={urlFor(img).width(600).url()}
-                      className="d-block w-100 img-fluid rounded shadow-sm"
+                      className="d-block w-100 img-fluid rounded shadow-sm subpage-carousel-img"
                       alt={`Profile image ${index + 1}`}
                     />
                   </div>

@@ -18,7 +18,7 @@ export default function SubpageCarousel({ images, id }: { images: any[]; id: str
             key={index}
             className={`carousel-item ${index === 0 ? "active" : ""}`}
           >
-            
+
             <img
               src={urlFor(img).width(600).url()}
               className="d-block w-100 img-fluid rounded shadow-sm subpage-carousel-img"
